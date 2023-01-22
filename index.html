@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Blog</title>
+
+    <!-- link to icons - Font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to swiper slider cdn css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" integrity="sha512-okkLcBJE+U19Dpd0QdHA1wn4YY6rW3CwaxeLJT3Jmj9ZcNSbln/VYw8UdqXRIwLX7J8PmtHs0I/FPAhozFvXKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link custom style.css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- ===================== Page Header ===================== -->
+    <header id="header" class="shadow bg_light">
+        <!-- navigation menu in header -->
+        <nav class="container navbar">
+            <!-- link to main page / Page Icon -->
+            <a href="/index.html" class="nav_brand text_dark">Blog Example</a>
+
+            <!-- toggle button -->
+            <button class="toggle_button">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <!-- colapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar_nav">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Blog</a>
+                    <a href="#" class="nav_link">Pages</a>
+                    <a href="#" class="nav_link">categories</a>
+                    <a href="#" class="nav_link">About</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </ul>
+            </div>
+            <!-- colapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar_nav">
+                    <!-- searchbox -->
+                    <div class="search_box">
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <!-- facebook link -->
+                    <a href="#" class="nav_link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <!-- twitter Link -->
+                    <a href="#" class="nav_link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <!-- instagram Link -->
+                    <a href="#" class="nav_link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <!-- github link -->
+                    <a href="#" class="nav_link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- ===================== .Page Header End ===================== -->
+
+    <!-- ===================== Page Main Body ===================== -->
+    <main id="site_main">
+
+        <!-- ------------- Blog Post Section ------------- -->
+        <section id="posts">
+            <div class="container">
+                <div class="grid">
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Erza.jpg" class=img_fluid alt="Image of Eza Scarlet - Fairytail">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Erza Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Jinx_Alley.jpg" class=img_fluid alt="Image of Jinx in an alley - Arcane">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Jinx Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Lily_Antlers.jpg" class=img_fluid alt="Image of Lily Ray in christmas costume - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Christmas Lily Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Lily_Look.jpg" class=img_fluid alt="Image of Lily Ray looking at her hand - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Profile Lily Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Lily_Wave.jpg" class=img_fluid alt="Image of Lily Ray in a field - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Portrait Lily Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Marlow.jpg" class=img_fluid alt="Image of Marlow - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Marlow Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Meghan.PNG" class=img_fluid alt="Image of Meghan - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Meghan Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Phen_Door.jpg" class=img_fluid alt="Image of Phen Ori in a doorway - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Phen doorway Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/profile pic - square.jpg" class=img_fluid alt="Image of Phen Ori Portrait - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Phen Portrait Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Scarlett_Crouch.PNG" class=img_fluid alt="Image of Scarlett reaching out - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Scarlett's Help Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                    <!-- article -->
+                    <div class="grid_item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow_img">
+                                    <a href="#">
+                                        <img src="/images/Scarlett_Fire.jpg" class=img_fluid alt="Image of Scarlett weilding fire magic - OC">
+                                    </a>
+                                </div>
+                                <div class="card_body text_centre px_1">
+                                    <a href="#" class="text_title display_1 text_dark">
+                                        Fire Mage Scarlett Drawing
+                                    </a>
+                                    <p class="secondary_title text_secondary display_3">
+                                        <span><i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                        <span><i class="far fa-comments text_primary_colour"></i>  12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- article -->
+                </div>
+
+                <!-- button to load more articles if there are more (does not actually do anything) -->
+                <div class="text_centre">
+                    <button class="btn btn_primary secondary_title text_light">Load More...</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- ------------- .Blog Post Section ------------- -->
+
+        <!-- ------------- Item Slider ------------- -->
+        <section class="slider">
+            <div class="container">
+                <!-- CODE SNIPPET TAKEN FROM "https://swiperjs.com/get-started" -->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx1.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx2.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx3.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx4.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx5.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx6.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx7.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="/images/slider/jinx8.jpg" class="img_fluid" alt="jinx image">
+                        </a>
+                    </div>
+                    <!-- .Slides -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- .Item Slider ------------- -->
+    </main>
+    <!-- ===================== .Page Main Body ===================== -->
+    
+    
+    <!-- ===================== Page Footer ===================== -->
+    <footer id="footer">
+        <div class="container">
+            <!-- row containing the three columns at the bottom o the page -->
+            <div class="foot_row">
+                <!-- ------------- Column 1 ------------- -->
+                <div class="foot_columns">
+                    <h2 class="foot_title secondary_title">About Us</h2>
+                    <div class="secondary_title text_secondary">
+                        <p class="margin_top_2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nulla tempora autem minima dolores id culpa aliquid delectus quia! Perferendis voluptatibus iste rem accusantium ut, quasi aliquid doloremque eaque tempora fugiat harum, corrupti aspernatur, tenetur eveniet assumenda explicabo! Tenetur, similique.
+                        </p>
+
+                        <!-- address inframtion -->
+                        <address>
+                            <i class="fas fa-map-marker-alt text_primary_colour"></i>
+                            50 Stone Rd E, Guelph, ON N1G 2W1
+                        </address>
+                        <!-- phone inforamtion -->
+                        <div class="phone">
+                            <i class="fas fa-mobile text_primary_colour"></i>
+                            (123) 456-7890
+                        </div>
+                        <!-- email information -->
+                        <i class="fas fa-envelope text_primary_colour"></i>
+                        demosupport@email.com
+                    </div>
+                </div>
+                <!-- ------------- .Column 1 ------------- -->
+
+                <!-- ------------- Column 2 ------------- -->
+                <div class="foot_columns">
+                    <h2 class="foot_title secondary_title">Featured Posts</h2>
+                    <!-- featured post -->
+                    <div class="feature_post">
+                        <!-- Post 1 -->
+                        <div class="flex_item">
+                            <article class="article">
+                                <div class="d_flex">
+                                    <a href="#" class="">
+                                        <img src="/images/Jinx_Alley.jpg" class="object_fit px_1" alt="Image of Jinx in an alley - Arcane">
+                                        <div class="px_1">
+                                            <a href="#" class="text_title display_2 text_dark">
+                                                Jinx in an Alleyway Darwing
+                                            </a>
+                                            <p class="secondary_title text_secondary display_3">
+                                                <span> <i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- .Post 1 -->
+                        <!-- Post 2 -->
+                        <div class="flex_item">
+                            <article class="article">
+                                <div class="d_flex">
+                                    <a href="#" class="">
+                                        <img src="/images/Erza.jpg" class="object_fit px_1" alt="Image of Erza Scarlet - Fairytail">
+                                        <div class="px_1">
+                                            <a href="#" class="text_title display_2 text_dark">
+                                                Erza Scarlet Darwing
+                                            </a>
+                                            <p class="secondary_title text_secondary display_3">
+                                                <span> <i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- .Post 2 -->
+                        <!-- Post 3 -->
+                        <div class="flex_item">
+                            <article class="article">
+                                <div class="d_flex">
+                                    <a href="#" class="">
+                                        <img src="/images/Lily_Look.jpg" class="object_fit px_1" alt=" Lily Ray profile drawing - OC">
+                                        <div class="px_1">
+                                            <a href="#" class="text_title display_2 text_dark">
+                                                Lily Profile Darwing
+                                            </a>
+                                            <p class="secondary_title text_secondary display_3">
+                                                <span> <i class="far fa-clock text_primary_colour"></i> Clock Sun Jan 08, 2023</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- .Post 3 -->
+                    </div>
+                </div>
+                <!-- ------------- .Column 2 ------------- -->
+                
+                <!-- ------------- Column 3 ------------- -->
+                <div class="foot_columns">
+                    <h2 class="foot_title secondary_title">Col 3</h2>
+                </div>
+                <!-- ------------- .Column 3 ------------- -->
+                
+            </div>
+        </div>
+    </footer>
+    <!-- ===================== .Page Footer ===================== -->
+
+    <!-- Masonry Libary cdn for horizontal Grid system -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- swipper slider library cdn for sliding menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- import custom Javascript main.js file -->
+    <script src="main.js"></script>
+    
+</body>
+</html>

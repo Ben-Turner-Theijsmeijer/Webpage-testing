@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+
+/* ===================== root styling ===================== */
+
+/* shortcut tags for custom colours for html elements */
+:root{
+    --light: #f8f9f8;
+    --secondary: #adb5bd;
+    --dark: #343a40;
+    --primary_colour: #f15bb5;
+    --secondary_colour: #2ec4b6;
+    --border: #e9ecef;
+}
+
+/* sets rules for everthing housed in the body element */
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* sets rules for everthing housed in the a elements */
+a{
+    text-decoration: none;
+}
+
+*>*{
+    box-sizing: border-box;
+}
+/* ===================== .root styling ===================== */
+
+
+/* ===================== global styling ===================== */
+
+/* ------------- custom classes for dictating element colour ------------- */
+/* any time the class "text_light" is added to an element it will have the 'light' colour */
+.text_light{
+    color: var(--light);
+}
+/* any time the class "text_secondary" is added to an element it will have the 'secondary' colour */
+.text_secondary{
+    color: var(--secondary);
+}
+/* any time the class "text_dark" is added to an element it will have the 'dark' colour */
+.text_dark{
+    color: var(--dark);
+}
+/* any time the class "text_primary_colour" is added to an element it will have the 'primary_colour' colour */
+.text_primary_colour{
+    color: var(--primary_colour);
+}
+/* any time the class "text_secondary_colour" is added to an element it will have the 'secondary_colour' colour */
+.text_secondary_colour{
+    color: var(--secondary_colour);
+}
+/* any time the class "bg_light" is added to an element it will have a 'light' background (seems unnecessary to have but following tutorial*/
+.bg_light{
+    background-color: var(--light);
+}
+/* ------------- .custom classes for dictating element colour ------------- */
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.img_fluid{
+    width: 100%;
+
+}
+
+.text_title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.secondary_title{
+    font-family: 'Poppins' sans-serif;
+}
+
+.display_1{
+    font-size: 22px;
+}
+
+.display_2{
+    font-size: 16;
+}
+
+.display_3{
+    font-size: 14px;
+}
+
+.text_centre{
+    text-align: center;
+}
+
+.text_right{
+    text-align: right;
+}
+
+.btn{
+    padding: 15px 20px;
+    border: none;
+}
+
+.btn_primary{
+    border-radius: 4px;
+    background-color: var(--secondary_colour);
+}
+
+.object_fit{
+    max-height: 120px;
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.justify_content_centre{
+    justify-content: center;
+}
+
+.justify_content_between{
+    justify-content: space-between;
+}
+
+/* Margin and padding options */
+.margin_top_2{
+    margin-top: 10px;
+}
+
+.margin_top_3{
+    margin-top: 50px;
+}
+
+.margin_bottom_3{
+    margin-bottom: 30px;
+}
+
+.px_1{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.px_2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py_1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py_2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py_3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* .Margin and padding options */
+
+
+/* ===================== .global styling ===================== */
+
+
+/* ===================== section styling ===================== */
+
+/* ------------- Navigation Menu ------------- */
+/* styling for the elements in the navigation bar */
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+/* styling for the webpage logo / name */
+.nav_brand{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}
+
+/* styling for the navigation bar unordered lists (not the links and icons inside) */
+.collapse{
+    align-self: center;
+}
+
+/* styling for the links and icons in the unordered lists */
+.nav_link{
+    font-size: 18px;
+    margin: 12px;
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styling for the magnifying glass icon and search */
+.search_box{
+    /* set the searchbox on the same line as the rest of the icons */
+    display: inline;
+    border-right: 1px solid var(--secondary);
+    padding-right:  12px;
+    margin-right: 10px;
+}
+
+.toggle_button{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 8px 10px;
+    display:none;
+}
+
+/* removes outline that appears when hovering over/clicking button */
+.toggle_button:focus{
+    outline: none;
+}
+/* ------------- .Navigation Menu ------------- */
+
+
+/* ------------- Main Page Section ------------- */
+#site_main{
+    margin-top: 8em;
+}
+
+#posts{
+    margin-bottom: 5em;
+}
+
+.grid{
+    margin: 0 auto;
+}
+
+/* Making the grid Items take up 1/3rd of the page */
+.grid .grid_item{
+    width: calc(33.3333% - 20px);
+    margin-bottom: 3em;
+}
+
+/* ------------- .Main Page Section ------------- */
+
+/* ------------- Footer Section ------------- */
+#footer{
+    padding: 4em;
+}
+
+.foot_row{
+    display: flex;
+}
+
+.foot_columns{
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-right: 35px;
+}
+
+#footer .feature_post .flex_item{
+    margin-bottom: 10px;
+}
+/* ------------- .Footer Section ------------- */
+
+
+/* media query (for adjusting for different device sizes)*/
+
+
+/* if viewport is smaller than 1024 switch to 2 columns in footer */
+@media(max-width: 1024px){
+    .foot_row{
+        flex-wrap: wrap;
+    }
+    .foot_columns{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* if viewport is smaller than 770 switch to two items in grid instead of three*/ 
+@media(max-width: 770px){
+    .grid .grid_item{
+        width: calc(50% - 20px);
+    }
+
+    /* switch to 1 columns in footer */
+    .foot_columns{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* if viewport is smaller than 1082 swap nav bar from showing elements in row to in column*/ 
+@media(max-width: 1082px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+/* if viewport is smaller than 574 */
+@media(max-width: 574px){
+    /*  show toggle nav bar button */
+    .toggle_button{
+        display:initial;
+    }
+    /* hide links and icons */
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.8s cubic-bezier(.79,.14,.15,.86);
+
+    }
+    /* switch link items to blocks in columns*/
+    .collapse .nav_link{
+        display: block;
+        text-align: center;
+    }
+    /* takes out line seperating search when not on same line */
+    .search_box{
+        border-right: none;
+    }
+    /* when toggle button clicked change height of collapse class to 500 */
+    .collapse_toggle{
+        max-height: 500px;
+    }
+
+    /* if viewport is smaller than 574 switch to one item in grid instead of two*/ 
+    .grid .grid_item{
+        width: calc(100% - 20px);
+    }
+}
+
+/* ===================== .section styling ===================== */
